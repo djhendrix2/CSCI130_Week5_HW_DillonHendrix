@@ -17,7 +17,7 @@ int main() {
   double wi, li; // width and length of lawn
   int L_min; // Min # of lawns needing seed
   int L; // # of lawns needing seed
-  double yardsize;
+  double yardsize, seedfeet;
   double total_cost;
   int i;
 
@@ -30,6 +30,9 @@ int main() {
   cout << " Input number of lawns to seed: ";
   cin >> L;
   cout << endl;
+
+  //L_min = 1;
+  yardsize = 0; 
   
   for(L_min = 1; L_min <= L; L_min = L_min + 1){
     cout << " ";
@@ -37,15 +40,17 @@ int main() {
     // for ( i = 0; i <= 100; i++) {
       cout << " Input yard width: ";
       cin >> wi;
-      cout << endl;
+      //cout << endl;
       cout << " Input yard length: ";
       cin >> li;
-      cout << endl;
+      yardsize = yardsize + (wi * li);
+      // cout << "The total yardsize is " << setprecision(7) << yardsize;
+    
      // }
     }
   
-  yardsize = wi * li;
+  // yardsize = wi * li;
   total_cost = C * yardsize;
-  cout << "Total cost is " << setprecision(6) << total_cost << endl;
+  cout << "Total cost is " << setprecision(8) << total_cost << endl;
   }
     

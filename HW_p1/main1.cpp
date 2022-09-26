@@ -1,7 +1,8 @@
 /*********************************************************************
   Programmer: Dillon Hendrix
   Discription: Test loading a *.dat file. Follows the handout
-  EOF_While_FileImport.pdf. Date: 09/20/2022
+  EOF_While_FileImport.pdf. 
+Date: 09/20/2022
   *******************************************************************/
 
 #include <fstream>
