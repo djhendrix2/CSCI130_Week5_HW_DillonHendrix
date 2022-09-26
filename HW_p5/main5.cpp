@@ -44,7 +44,8 @@ int main() {
      // }
     }
   
-  //yardsize = wi * li;
-  //total_cost = 
+  yardsize = wi * li;
+  total_cost = C * yardsize;
+  cout << "Total cost is " << setprecision(6) << total_cost << endl;
   }
     
